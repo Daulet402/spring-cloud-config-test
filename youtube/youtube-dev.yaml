@@ -1,0 +1,12 @@
+youtube:
+  datasource:
+    users:
+      url: jdbc:postgresql://192.168.216.160:5432/youtube_dev
+      username: youtube_dev
+      password: fgyjhknml2czd
+      driver-class-name: org.postgresql.Driver
+      connection-properties: prepareThreshold=0
+      test-while-idle: true
+      validation-query: SELECT 1
+      validation-query-timeout: 5
+      log-validation-errors: true

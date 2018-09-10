@@ -1,0 +1,32 @@
+coda:
+  datasource:
+    codaUsers:
+      url: jdbc:postgresql://192.168.216.160:6432/coda2_pre
+      username: coda2_pre
+      password: coda2_pre
+      driver-class-name: org.postgresql.Driver
+      connection-properties: prepareThreshold=0
+      test-while-idle: true
+      validation-query: SELECT 1
+      validation-query-timeout: 5
+      log-validation-errors: true
+mfs:
+  datasource:
+      url: jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=cddb-pmy)(port=1521))(load_balance=yes)(failover=on)(connect_data=(server=dedicated)(service_name=cddb)(failover_mode=(type=select)(method=basic)(retries=10)(delay=1))))
+      username: APP_MFS
+      password: Ne23_fe3k83E
+      driver-class-name: oracle.jdbc.OracleDriver
+      test-while-idle: true
+      validation-query: SELECT 1 FROM DUAL
+      validation-query-timeout: 5
+      log-validation-errors: true
+cddb:
+  datasource:
+      url: jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=cddb-pmy)(port=1521))(load_balance=yes)(failover=on)(connect_data=(server=dedicated)(service_name=cddb)(failover_mode=(type=select)(method=basic)(retries=10)(delay=1))))
+      username: cddb_preprod
+      password: qwe123
+      driver-class-name: oracle.jdbc.OracleDriver
+      test-while-idle: true
+      validation-query: SELECT 1 FROM DUAL
+      validation-query-timeout: 5
+      log-validation-errors: true
