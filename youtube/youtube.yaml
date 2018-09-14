@@ -3,7 +3,7 @@ youtube:
     users:
       url: jdbc:postgresql://192.165.206.160:6432/youtube
       username: youtube
-      password: dsefrdgd
+      password: '{cipher}c71ead005c5e91de4773152590362ebde24ce94055ab96049e675b9665e5dc388b663ead7662e1fda6df24d411e0df80'
       driver-class-name: org.postgresql.Driver
       connection-properties: prepareThreshold=0
       test-while-idle: true
